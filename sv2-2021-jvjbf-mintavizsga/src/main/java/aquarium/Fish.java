@@ -3,7 +3,7 @@ package aquarium;
 public abstract class Fish {
 
     private String name;
-    private int weight; //g-ban
+    protected int weight; //g-ban
     private String color;
     private boolean memoryLoss;
 
@@ -13,8 +13,9 @@ public abstract class Fish {
         this.color = color;
     }
 
-    public void getStatus() {
+    public String getStatus() {
         String datas = String.format("%s, weight: %d, color: %s, short-term memory loss: %s", name, weight, color, memoryLoss);
+        return datas;
     }
 
     public abstract void feed();
@@ -33,9 +34,5 @@ public abstract class Fish {
 
     public boolean hasMemoryLoss() {
         return memoryLoss;
-    }
-
-    public void setMemoryLoss(boolean memoryLoss) {
-        this.memoryLoss = memoryLoss;
     }
 }

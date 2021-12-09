@@ -8,7 +8,7 @@ public class Clownfish extends Fish {
 
     @Override
     public void feed() {
-        int weight = getWeight() + 1;
+        weight += 1;
     }
 
 }

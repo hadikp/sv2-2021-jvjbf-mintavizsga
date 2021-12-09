@@ -8,6 +8,6 @@ public class Kong extends Fish {
 
     @Override
     public void feed() {
-        int weight = getWeight() + 2;
+        weight += 2;
     }
 }

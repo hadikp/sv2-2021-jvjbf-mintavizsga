@@ -52,21 +52,18 @@ class FishTest {
     @Test
     void testFeedClownfish() {
         clownfish.feed();
-
         assertEquals(6, clownfish.getWeight());
     }
 
     @Test
     void testFeedTang() {
         tang.feed();
-
         assertEquals(7, tang.getWeight());
     }
 
     @Test
     void testFeedKong() {
         kong.feed();
-
         assertEquals(12, kong.getWeight());
     }
 
