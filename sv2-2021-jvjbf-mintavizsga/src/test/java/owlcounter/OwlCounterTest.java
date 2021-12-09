@@ -42,8 +42,7 @@ class OwlCounterTest {
 
     @Test
     void testGetNumberOfAllOwls() {
-       // assertEquals(11410, owlCounter.getNumberOfAllOwls());
-        //owlCounter.getNumberOfAllOwls();
+        assertEquals(11410, owlCounter.getNumberOfAllOwls());
     }
 
 }
