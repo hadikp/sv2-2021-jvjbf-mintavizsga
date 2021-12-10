@@ -10,4 +10,9 @@ public class Kong extends Fish {
     public void feed() {
         weight += 2;
     }
+
+    /*@Override
+    public boolean hasMemoryLoss() {
+        return false;
+    }*/
 }

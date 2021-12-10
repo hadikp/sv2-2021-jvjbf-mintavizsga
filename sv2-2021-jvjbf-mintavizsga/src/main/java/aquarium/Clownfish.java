@@ -11,4 +11,8 @@ public class Clownfish extends Fish {
         weight += 1;
     }
 
+    /*@Override
+    public boolean hasMemoryLoss() {
+        return false;
+    }*/
 }

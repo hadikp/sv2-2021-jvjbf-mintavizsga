@@ -9,7 +9,7 @@ public class Aquarium {
     public static final int CAPACITY = 20;
 
     public void addFish(Fish fish) {
-        if (fishList.size() * 5 < CAPACITY) {
+        if ((fishList.size() + 1 ) * 5 <= CAPACITY) {
             fishList.add(fish);
         } else {
             throw new IllegalStateException("Can not add fish because there is no more space.");
@@ -43,7 +43,7 @@ public class Aquarium {
     public int getNumberOfFishWithMemoryLoss() {
         int count = 0;
         for (Fish f: fishList) {
-            if (f.hasMemoryLoss() == true) {
+            if (f.hasMemoryLoss()) {
                 count++;
             }
         }

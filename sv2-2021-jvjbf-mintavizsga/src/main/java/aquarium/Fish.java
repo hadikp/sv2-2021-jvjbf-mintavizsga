@@ -5,7 +5,7 @@ public abstract class Fish {
     private String name;
     protected int weight; //g-ban
     private String color;
-    private boolean memoryLoss;
+    protected boolean memoryLoss;
 
     public Fish(String name, int weight, String color) {
         this.name = name;
@@ -33,6 +33,7 @@ public abstract class Fish {
     }
 
     public boolean hasMemoryLoss() {
-        return memoryLoss;
+        return false;
     }
+
 }
